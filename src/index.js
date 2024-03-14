@@ -5,13 +5,13 @@ import reportWebVitals from './reportWebVitals';
 import { NavBar } from './NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './Footer';
-import Welcome from './Welcome';
+import AllTheBooks from './AllTheBooks';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <NavBar />
-    <Welcome />
+    <AllTheBooks />
     <Footer />
   </React.StrictMode>
 );
