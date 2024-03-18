@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { NavBar } from './NavBar';
+import NavBar from './components/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Footer from './Footer';
-import AllTheBooks from './AllTheBooks';
+import Footer from './components/Footer';
+import AllTheBooks from './components/AllTheBooks';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

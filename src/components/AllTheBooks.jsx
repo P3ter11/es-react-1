@@ -1,4 +1,4 @@
-import fantasy from './fantasy.json'
+import fantasy from '../fantasy.json'
 import { SingleBooks } from './SingleBooks'
 import Form from 'react-bootstrap/Form';
 import { useState } from 'react';
@@ -11,8 +11,8 @@ const AllTheBooks = () => {
   return (
     <>
     <br />
-      <Form.Label htmlFor="inputName">Cerca</Form.Label>
-        <Form.Control
+      <Form.Label htmlFor="inputName" className='m-2'>Cerca</Form.Label>
+        <Form.Control className='mx-2'
           type="text"
           id="keyword"
           placeholder="Inserisci parola chiave"
@@ -22,11 +22,10 @@ const AllTheBooks = () => {
         />
       <br />
       <div className="row col-11 mx-auto">
-        {filteredValue.map((book, key) => {
+        {filteredValue.map((book) => {
           return(
             <div className='col-md-3 g-5'>
               <SingleBooks
-              id = {key.id} 
               img = {book.img}
               title = {book.title}
               />
